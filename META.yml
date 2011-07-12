@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               WWW-FastPass
-version:            0.02
+version:            0.03
 abstract:           Get Satisfaction FastPass functions
 author:
     - Tom Harrison <tomhrr@cpan.org>
