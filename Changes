@@ -1,6 +1,9 @@
 Revision history for Perl extension WWW::FastPass.
 
-0.01  Mon Jan 17 14:37:11 2011
-        - original version; created by h2xs 1.23 with options
-		-AX WWW::FastPass
+0.02    12 July 2011
+        - Incorporated patch from sthoenna@gmail.com to use Digest::SHA1,
+          instead of Digest::SHA, since the former is core and is already a
+          dependency of Net::OAuth.
 
+0.01    17 January 2011
+        - Initial release.

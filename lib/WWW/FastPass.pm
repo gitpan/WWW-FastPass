@@ -4,10 +4,10 @@ use 5.008008;
 use strict;
 use warnings;
 
-use Digest::SHA qw(sha1_base64);
+use Digest::SHA1 qw(sha1_base64);
 use Net::OAuth;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use constant SCRIPT_FRAGMENT => <<EOF;
 <script type="text/javascript">
@@ -61,7 +61,7 @@ sub url
         request_method   => 'GET',
         signature_method => 'HMAC-SHA1',
         timestamp        => time(),
-        nonce            => Digest::SHA::sha1_base64(time() . $$ . rand()),
+        nonce            => sha1_base64(time() . $$ . rand()),
         callback         => 'oob',
         extra_params     => \%extra_params
     );

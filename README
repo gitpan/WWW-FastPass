@@ -1,4 +1,4 @@
-WWW-FastPass version 0.01
+WWW-FastPass version 0.02
 =========================
 
 Get Satisfaction FastPass functions
@@ -16,7 +16,7 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  Digest::SHA
+  Digest::SHA1
   Net::OAuth
   URI (for tests only)
 

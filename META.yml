@@ -1,9 +1,9 @@
 --- #YAML:1.0
 name:               WWW-FastPass
-version:            0.01
+version:            0.02
 abstract:           Get Satisfaction FastPass functions
 author:
-    - Tom Harrison <tomh5908@gmail.com>
+    - Tom Harrison <tomhrr@cpan.org>
 license:            unknown
 distribution_type:  module
 configure_requires:
@@ -11,9 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Digest::SHA:  0
-    Net::OAuth:   0
-    URI:          0
+    Digest::SHA1:  0
+    Net::OAuth:    0
+    URI:           0
 no_index:
     directory:
         - t
